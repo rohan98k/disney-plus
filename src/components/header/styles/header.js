@@ -18,6 +18,8 @@ export const NavMenu = styled.div`
   justify-content: center;
   align-items: center;
   a {
+    text-decoration: none;
+    color: inherit;
     display: flex;
     align-items: center;
     padding: 0 12px;
