@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 
 export const Carousel = styled(Slider)`
-  margin-top: 20px;
+  margin-top: 70px;
   ul li button {
     &:before {
       font-size: 10px;
@@ -24,6 +24,7 @@ export const Wrap = styled.div`
   cursor: pointer;
   display: flex;
   width: 100%;
+  padding: 0 5px;
   img {
     border: 4px solid transparent;
     width: 100%;

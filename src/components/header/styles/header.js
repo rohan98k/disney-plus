@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
   height: 70px;
-  background: #090b13;
+  background: linear-gradient(180deg, #141924 0%, #0e1219 100%);
   display: flex;
   align-items: center;
   padding: 0 36px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 `;
 
 export const Logo = styled.img`

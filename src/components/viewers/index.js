@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Wrap } from './styles/viewers';
 
-function Viewers() {
+export default function Viewers() {
   return (
     <Container>
       <Wrap>
@@ -22,5 +22,3 @@ function Viewers() {
     </Container>
   );
 }
-
-export default Viewers;

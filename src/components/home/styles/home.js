@@ -6,8 +6,7 @@ export const Container = styled.main`
   position: relative;
 
   &:before {
-    background: url('/images/home-background.png') center center / cover
-      no-repeat fixed;
+    background: linear-gradient(180deg, #141924 0%, #0e1219 100%);
     content: '';
     position: absolute;
     top: 0;
