@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 
 export const Carousel = styled(Slider)`
-  margin-top: 70px;
   padding: 0 calc(3.5vw + 5px);
   & > button {
     opacity: 0;

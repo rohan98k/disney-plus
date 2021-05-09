@@ -1,68 +1,63 @@
 import styled from 'styled-components';
+import { Link as ReactRouterLink } from 'react-router-dom';
 
-export const Nav = styled.nav`
+export const Background = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: url
+    (
+      ${({ src }) =>
+        src ? '.../images/misc/${src}.jpg' : '..../images/misc.home-bg.jpg'}
+    )
+    top-left / cover no-repeat; ;
+`;
+export const Container = styled.div`
+  display: flex;
+  margin: 0 calc(3.5vw + 5px);
   height: 70px;
-  background: linear-gradient(180deg, #141924 0%, #0e1219 100%);
-  display: flex;
   align-items: center;
-  padding: 0 36px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-`;
-
-export const Logo = styled.img`
-  width: 80px;
-`;
-
-export const NavMenu = styled.div`
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   a {
-    text-decoration: none;
-    color: inherit;
     display: flex;
-    align-items: center;
-    padding: 0 12px;
-    img {
-      height: 20px;
-      padding-right: 2px;
-    }
-    span {
-      font-size: 13px;
-      letter-spacing: 1.2px;
-      position: relative;
-
-      &:after {
-        content: '';
-        height: 2px;
-        background: white;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -6px;
-        opacity: 0;
-        transform-origin: left center;
-        transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-        transform: scaleX(0);
-      }
-    }
-    &:hover {
-      span:after {
-        transform: scaleX(1);
-        opacity: 1;
-      }
-    }
-    cursor: pointer;
   }
 `;
 
-export const UserImg = styled.img`
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+export const Box = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const Frame = styled.div``;
+export const Logo = styled.img`
+height : 40px;  
+width: 120px;
+  margin-right : 30px;
+  @media (min-width: 1440px{
+    height: 50px;
+    width: 150px;
+  })
+`;
+
+export const SubscribeButtonLink = styled(ReactRouterLink)`
+  display: block;
+  background-color: #1f80e0;
+  justify-content: center;
+  width: 90px;
+  height: fit-content;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 8px 16px;
+  box-sizing: border-box;
   cursor: pointer;
+  margin-right : 15px;
+  }
+  `;
+export const ButtonLink = styled(ReactRouterLink)`
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  margin-right: 0;
 `;

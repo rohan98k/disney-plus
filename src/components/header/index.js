@@ -1,37 +1,40 @@
 import React from 'react';
-import { Nav, Logo, NavMenu, UserImg } from './styles/header';
+import { Link as ReactRouterLink } from 'react-router-dom';
+import {
+  Background,
+  Container,
+  Box,
+  Logo,
+  SubscribeButtonLink,
+  ButtonLink,
+} from './styles/header';
 
-export default function Header() {
-  return (
-    <Nav>
-      <Logo src='/images/logo.svg' />
-      <NavMenu>
-        <a href='/#'>
-          <img src='/images/home-icon.svg' alt='' />
-          <span> Home </span>
-        </a>
-        <a href='/#'>
-          <img src='/images/search-icon.svg' alt='' />
-          <span> Search </span>
-        </a>
-        <a href='/#'>
-          <img src='/images/watchlist-icon.svg' alt='' />
-          <span> Watchlist </span>
-        </a>
-        <a href='/#'>
-          <img src='/images/original-icon.svg' alt='' />
-          <span> Originals </span>
-        </a>
-        <a href='/#'>
-          <img src='/images/movie-icon.svg' alt='' />
-          <span> Movies </span>
-        </a>
-        <a href='/#'>
-          <img src='/images/series-icon.svg' alt='' />
-          <span> Series </span>
-        </a>
-      </NavMenu>
-      <UserImg src='https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png' />
-    </Nav>
-  );
+export default function Header({ bg = true, children, ...restProps }) {
+  return bg ? <Background {...restProps}> {children}</Background> : children;
 }
+
+Header.Frame = function HeaderFrame({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
+};
+
+Header.Box = function HeaderBox({ children, ...restProps }) {
+  return <Box {...restProps}>{children}</Box>;
+};
+
+Header.Logo = function HeaderLogo({ to, ...restProps }) {
+  return (
+    <ReactRouterLink to={to}>
+      <Logo {...restProps} />
+    </ReactRouterLink>
+  );
+};
+
+Header.SubscribeButtonLink = function HeaderSubscribeButtonLink({
+  children,
+  ...restProps
+}) {
+  return <SubscribeButtonLink {...restProps}>{children}</SubscribeButtonLink>;
+};
+Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
+  return <ButtonLink {...restProps}>{children}</ButtonLink>;
+};

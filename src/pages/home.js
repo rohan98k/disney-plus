@@ -1,6 +1,6 @@
 import React from 'react';
 import { FooterContainer } from '../container/footer';
-import Header from '../components/header';
+import { HeaderContainer } from '../container/header';
 import Movies from '../components/movies';
 import ImageSlider from '../components/slider';
 import Viewers from '../components/viewers';
@@ -8,7 +8,7 @@ import Viewers from '../components/viewers';
 export default function Home() {
   return (
     <>
-      <Header />
+      <HeaderContainer />
       <ImageSlider />
       <Viewers />
       <Movies />
