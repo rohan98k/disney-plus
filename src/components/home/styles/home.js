@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.main`
   min-height: calc(100vh - 70px);
   padding: 0 calc(3.5vw + 5px);
-  position: relative;
 
   &:before {
     background: linear-gradient(180deg, #141924 0%, #0e1219 100%);

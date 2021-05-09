@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 
 export const Container = styled.div`
   margin-top: 50px;
+  display=flex;
   h3 {
     font-size: 22px;
     font-weight: 500;
@@ -34,7 +35,6 @@ export const Carousel = styled(Slider)`
 
 export const Wrap = styled.div`
   cusror: pointer;
-  position: relative;
   div {
     cursor: pointer;
     img {

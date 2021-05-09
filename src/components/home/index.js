@@ -1,4 +1,5 @@
 import React from 'react';
+import { FooterContainer } from '../../container/footer';
 import Movies from '../movies';
 import ImageSlider from '../slider';
 import Viewers from '../viewers';
@@ -10,6 +11,7 @@ export default function Home() {
       <ImageSlider />
       <Viewers />
       <Movies />
+      <FooterContainer />
     </Container>
   );
 }
