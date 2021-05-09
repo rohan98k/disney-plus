@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Carousel, Wrap, Text } from './styles/movies';
+import { Container, Carousel, Wrap } from './styles/movies';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import recoData from '../../content/recoData.json';

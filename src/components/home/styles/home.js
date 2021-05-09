@@ -1,17 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  min-height: calc(100vh - 70px);
+  position: relative;
+  min-height: calc(100vh - 250px);
+  overflow-x: hidden;
+  display: block;
+  top: 72px;
   padding: 0 calc(3.5vw + 5px);
-
-  &:before {
+  &:after {
     background: linear-gradient(180deg, #141924 0%, #0e1219 100%);
-    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
   }
 `;
