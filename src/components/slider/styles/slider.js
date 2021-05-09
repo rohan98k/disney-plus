@@ -34,9 +34,11 @@ export const Carousel = styled(Slider)`
 `;
 
 export const Wrap = styled.div`
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 4px solid transparent;
   cursor: pointer;
   position: relative;
+
   a {
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
@@ -50,9 +52,9 @@ export const Wrap = styled.div`
       height: 100%;
     }
     &:hover {
+      transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
       padding: 0;
       border: 4px solid rgba(249, 249, 249, 0.8);
-      transition-duration: 300ms;
     }
   }
 `;

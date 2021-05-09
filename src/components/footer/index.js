@@ -3,10 +3,13 @@ import {
   Container,
   Row,
   Column,
+  Box,
+  HorizontalBox,
   Link,
-  Button,
   Text,
   Break,
+  SocialMedia,
+  Store,
 } from './styles/footer';
 
 export default function Footer({ children, ...restProps }) {
@@ -21,12 +24,26 @@ Footer.Column = function FooterColumn({ children, ...restProps }) {
   return <Column {...restProps}>{children}</Column>;
 };
 
+Footer.Box = function FooterBox({ children, ...restProps }) {
+  return <Box {...restProps}>{children}</Box>;
+};
+Footer.HorizontalBox = function FooterHorizontalBox({
+  children,
+  ...restProps
+}) {
+  return <HorizontalBox {...restProps}>{children}</HorizontalBox>;
+};
+
 Footer.Link = function FooterLink({ children, ...restProps }) {
   return <Link {...restProps}>{children}</Link>;
 };
 
-Footer.Button = function FooterButton({ children, ...restProps }) {
-  return <Button {...restProps}>{children}</Button>;
+Footer.SocialMedia = function FooterSocialMedia({ children, ...restProps }) {
+  return <SocialMedia {...restProps}>{children}</SocialMedia>;
+};
+
+Footer.Store = function FooterStore({ children, ...restProps }) {
+  return <Store {...restProps}>{children}</Store>;
 };
 
 Footer.Text = function FooterText({ children, ...restProps }) {
