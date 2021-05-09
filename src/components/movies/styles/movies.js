@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 
 export const Container = styled.div`
   margin-top: 50px;
+    padding: 0 calc(3.5vw + 5px);
   display=flex;
   h3 {
     font-size: 22px;

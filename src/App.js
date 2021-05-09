@@ -1,14 +1,23 @@
 import React from 'react';
-import Header from './components/header';
-import Home from './components/home';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Home, Browse, Signin, Signup } from './pages';
+import * as ROUTES from './constants/routes';
 
-function App() {
+export default function App() {
   return (
-    <div className='App'>
-      <Header />
-      <Home />
-    </div>
+    <Router>
+      <Route exact path={ROUTES.HOME}>
+        <Home />
+      </Route>
+      <Route exact path='./signup'>
+        <Signup />
+      </Route>
+      <Route exact path='./signin'>
+        <Signin />
+      </Route>
+      <Route exact path='./browse'>
+        <Browse />
+      </Route>
+    </Router>
   );
 }
-
-export default App;
