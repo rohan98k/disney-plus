@@ -6,16 +6,16 @@ import * as ROUTES from './constants/routes';
 export default function App() {
   return (
     <Router>
-      <Route exact path={ROUTES.HOME}>
+      <Route exact path='{ROUTES.HOME}'>
         <Home />
       </Route>
-      <Route exact path={ROUTES.SIGN_UP}>
+      <Route exact path='/signup'>
         <Signup />
       </Route>
-      <Route exact path={ROUTES.SIGN_IN}>
+      <Route exact path='/signin'>
         <Signin />
       </Route>
-      <Route exact path='./browse'>
+      <Route exact path='/browse'>
         <Browse />
       </Route>
     </Router>
