@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link as ReachRouterLink } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
@@ -16,6 +16,9 @@ export const Container = styled.div`
 
 export const Error = styled.div`
   background: #f15151;
+  word-break: break;
+  white-space: pre-wrap;
+  display: flex;
   border-radius: 4px;
   font-size: 14px;
   margin: 0 0 16px;
@@ -48,7 +51,7 @@ export const SmallText = styled.p`
   text-align: center;
 `;
 
-export const Link = styled(ReachRouterLink)`
+export const Link = styled(ReactRouterLink)`
   color: #fff;
   text-decoration: none;
   &:hover {
@@ -58,7 +61,7 @@ export const Link = styled(ReachRouterLink)`
 
 export const Input = styled.input`
   border: 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   height: 50px;
   overflow: hidden;
   line-height: 50px;
@@ -70,6 +73,9 @@ export const Input = styled.input`
   border-bottom: 1px solid #1f80e0;
   :focus {
     border-bottom: 2px solid #1f80e8;
+  }
+  :placeholder {
+    color: rgba(255, 255, 255, 0.6);
   }
 `;
 
