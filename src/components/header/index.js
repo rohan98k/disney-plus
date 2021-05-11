@@ -5,6 +5,8 @@ import {
   Container,
   Box,
   Logo,
+  Title,
+  Body,
   SubscribeButtonLink,
   ButtonLink,
 } from './styles/header';
@@ -15,6 +17,12 @@ export default function Header({ bg = true, children, ...restProps }) {
 
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
+};
+Header.Title = function HeaderTitle({ children, ...restProps }) {
+  return <Title {...restProps}>{children}</Title>;
+};
+Header.Body = function HeaderBody({ children, ...restProps }) {
+  return <Body {...restProps}>{children}</Body>;
 };
 
 Header.Box = function HeaderBox({ children, ...restProps }) {
