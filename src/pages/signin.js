@@ -3,10 +3,10 @@ import { useHistory } from 'react-router-dom';
 import { FirebaseContext } from '../context/firebase';
 import { HeaderContainer } from '../container/header';
 import { FooterContainer } from '../container/footer';
-import { Form, Header } from '../components';
+import { Form } from '../components';
 import * as ROUTES from '../constants/routes';
 
-export default function Signin() {
+export default function SignIn() {
   const history = useHistory();
   const { firebase } = useContext(FirebaseContext);
   const [emailAddress, setEmailAddress] = useState('');
@@ -33,8 +33,8 @@ export default function Signin() {
   return (
     <>
       <HeaderContainer>
-        <Header.Title>You are almost there!</Header.Title>
-        <Header.Body>Login now to enjoy </Header.Body>
+        <HeaderContainer.Title>You are almost there!</HeaderContainer.Title>
+        <HeaderContainer.Body>Login now to enjoy </HeaderContainer.Body>
         <Form>
           <Form.Title>Log In!</Form.Title>
           {error && <Form.Error>{error}</Form.Error>}
