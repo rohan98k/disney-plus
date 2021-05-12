@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { FirebaseContext } from '../context/firebase';
 import { HeaderContainer } from '../container/header';
 import { FooterContainer } from '../container/footer';
-import { Form } from '../components';
+import { Form, Header } from '../components';
 import * as ROUTES from '../constants/routes';
 
 export default function SignIn() {
@@ -33,8 +33,8 @@ export default function SignIn() {
   return (
     <>
       <HeaderContainer>
-        <HeaderContainer.Title>You are almost there!</HeaderContainer.Title>
-        <HeaderContainer.Body>Login now to enjoy </HeaderContainer.Body>
+        <Header.Title>You are almost there!</Header.Title>
+        <Header.Body>Login now to enjoy </Header.Body>
         <Form>
           <Form.Title>Log In!</Form.Title>
           {error && <Form.Error>{error}</Form.Error>}
@@ -62,7 +62,7 @@ export default function SignIn() {
           </Form.Base>
           <Form.Text>
             Not a member?
-            <Form.Link to='/signin'> Sign Up now!</Form.Link>
+            <Form.Link to='/signup'> Sign Up now!</Form.Link>
           </Form.Text>
         </Form>
       </HeaderContainer>
