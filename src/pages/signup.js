@@ -9,11 +9,11 @@ import * as ROUTES from '../constants/routes';
 export default function SignUp() {
   const history = useHistory();
   const { firebase } = useContext(FirebaseContext);
-  const [FirstName, setFirstName] = useState('');
-  const [emailAddress, setEmailAddress] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const isInvalid = FirstName === '' || password === '' || emailAddress === '';
+  let [FirstName, setFirstName] = useState('');
+  let [emailAddress, setEmailAddress] = useState('');
+  let [password, setPassword] = useState('');
+  let [error, setError] = useState('');
+  let isInvalid = FirstName === '' || password === '' || emailAddress === '';
   const handleSignup = (event) => {
     event.preventDefault();
     firebase
