@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "src": "mandalorian",
+    "alt": "The Mandalorian",
+    "heading": "The Mandalorian",
+    "subtitle": "Star Wars • Action • Adventure",
+    "body": "After the defeat of the Empire at the hands of Rebel forces, a lone bounty hunter operating in the Outer Rim, away from the dominion of the New Republic, goes on many surprising and risky adventures."
+  },
+
+  {
+    "id": 2,
+    "src": "falcon",
+    "alt": "Falcon and the Winter Soldier",
+    "heading": "The Falcon and the Winter Soldier",
+    "subtitle": "Marvel • Superheroes • Action",
+    "body": "Falcon and the Winter Soldier are a mismatched duo who team up for a global adventure that will test their survival skills -- as well as their patience."
+  },
+  {
+    "id": 3,
+    "src": "westworld",
+    "alt": "Westworld",
+    "heading": "Westworld",
+    "subtitle": "Science Fiction • Drama • HBO Originals",
+    "body": "In a futuristic Western-themed amusement park, Westworld, the visitors interact with automatons. However, all hell breaks loose when the robots begin malfunctioning."
+  },
+  {
+    "id": 4,
+    "src": "chernobyl",
+    "alt": "Chernobyl",
+    "heading": "Chernobyl",
+    "subtitle": "Drama • HBO Originals",
+    "body": "In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line to save Europe."
+  },
+  {
+    "id": 5,
+    "src": "watchmen",
+    "alt": "Watchmen",
+    "heading": "Watchmen",
+    "subtitle": "Drama • Superheroes • HBO Originals",
+    "body": "When masked vigilantes are treated as criminals by government agencies, some band together to start a mutiny while others aim to stop it before it yields chaos."
+  }
+]

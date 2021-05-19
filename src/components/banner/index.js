@@ -1,27 +1,23 @@
 import React from 'react';
 import {
   Container,
-  Picture,
-  Gradient,
+  Carousel,
+  Frame,
   Heading,
   Body,
   Subtitle,
 } from './styles/banner';
 
-export default function Banner(children, ...restProps) {
-  return <Container {...restProps}>{children}</Container>;
+export default function Banner({ children, ...restProps }) {
+  return <Carousel {...restProps}>{children}</Carousel>;
 }
 
-Banner.Picture = function BannerPicture({ src, ...restProps }) {
-  return <Picture {...restProps} src={`/images/banner/${src}.png`} />;
+Banner.Container = function BannerContainer({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
 };
 
-Banner.Gradient = function BannerGradient({ children, ...restProps }) {
-  return <Gradient {...restProps}>{children}</Gradient>;
-};
-
-Banner.Gradient = function BannerGradient({ children, ...restProps }) {
-  return <Gradient {...restProps}>{children}</Gradient>;
+Banner.Frame = function BannerFrame({ children, ...restProps }) {
+  return <Frame {...restProps}>{children}</Frame>;
 };
 
 Banner.Heading = function BannerHeading({ children, ...restProps }) {

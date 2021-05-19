@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { SelectProfilesContainer } from './profiles';
 import { FirebaseContext } from '../context/firebase';
+import { BannerSlider } from '../container/banner';
 import { Header, Loading } from '../components';
 import * as ROUTES from '../constants/routes';
 
@@ -10,7 +11,6 @@ export function BrowseContainer({ slides }) {
   const [loading, setLoading] = useState(true);
   const { firebase } = useContext(FirebaseContext);
   const user = firebase.auth().currentUser || {};
-  console.log(user);
 
   useEffect(() => {
     setTimeout(() => {
@@ -52,6 +52,8 @@ export function BrowseContainer({ slides }) {
           </Header.Group>
         </Header.Frame>
       </Header>
+
+      <BannerSlider />
     </>
   ) : (
     <SelectProfilesContainer user={user} setProfile={setProfile} />

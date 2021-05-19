@@ -5,6 +5,8 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   html, body {
+    max-width: 100%;
+    overflow-x: hidden;
     height: 100%;
     margin:0;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
