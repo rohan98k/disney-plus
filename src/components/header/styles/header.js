@@ -155,6 +155,7 @@ export const Picture = styled.button`
 export const Dropdown = styled.div`
   display: none;
   position: absolute;
+  z-index: 2;
   background-color: black;
   padding: 10px;
   width: 100px;

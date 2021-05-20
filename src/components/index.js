@@ -4,3 +4,4 @@ export { default as Form } from './form';
 export { default as Profiles } from './profiles';
 export { default as Loading } from './loading';
 export { default as Banner } from './banner';
+export { default as Viewers } from './viewers';

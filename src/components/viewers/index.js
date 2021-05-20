@@ -1,24 +1,18 @@
 import React from 'react';
-import { Container, Wrap } from './styles/viewers';
+import { Container, Frame, Image, Video } from './styles/viewers';
 
-export default function Viewers() {
-  return (
-    <Container>
-      <Wrap>
-        <img src='/images/viewers-disney.png' alt='' />
-      </Wrap>
-      <Wrap>
-        <img src='/images/viewers-marvel.png' alt='' />
-      </Wrap>
-      <Wrap>
-        <img src='/images/viewers-national.png' alt='' />
-      </Wrap>
-      <Wrap>
-        <img src='/images/viewers-pixar.png' alt='' />
-      </Wrap>
-      <Wrap>
-        <img src='/images/viewers-starwars.png' alt='' />
-      </Wrap>
-    </Container>
-  );
+export default function Viewers(children, ...restProps) {
+  return <Container {...restProps}>{children}</Container>;
 }
+
+Viewers.Frame = function ViewerFrame({ children, ...restProps }) {
+  return <Frame {...restProps}>{children}</Frame>;
+};
+
+Viewers.Image = function ViewersImage({ src, ...restProps }) {
+  return <Image {...restProps} src={`/images/viewers/${src}.png`} />;
+};
+
+Viewers.Video = function ViewersVideo({ source, ...restProps }) {
+  return <Video {...restProps} />;
+};

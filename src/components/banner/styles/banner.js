@@ -7,7 +7,6 @@ export const Carousel = styled(Slider)`
     opacity: 0;
     height: 100%;
     width: 5vw;
-    z-index: 1;
     &:hover {
       opacity: 1;
       transition: opacity 0.2s ease 0s;
@@ -26,11 +25,20 @@ export const Carousel = styled(Slider)`
   .slick-list {
     overflow: initial;
   }
-  .slick-prev {
-    left: -75px;
-  }
   .slick-next {
-    right: -75px;
+    background: url('./images/icons/next-arrow.png') center center no-repeat !important;
+    right: 0px;
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-prev {
+    background: url('./images/icons/prev-arrow.png') center center no-repeat !important;
+    left: 0px;
+    &::before {
+      display: none;
+    }
   }
 `;
 

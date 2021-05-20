@@ -1,8 +1,11 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { SelectProfilesContainer } from './profiles';
 import { FirebaseContext } from '../context/firebase';
-import { BannerSlider } from '../container/banner';
+
 import { Header, Loading } from '../components';
+import { BannerSlider } from '../container/banner';
+import { ViewersContainer } from './viewers';
+
 import * as ROUTES from '../constants/routes';
 
 export function BrowseContainer({ slides }) {
@@ -52,8 +55,8 @@ export function BrowseContainer({ slides }) {
           </Header.Group>
         </Header.Frame>
       </Header>
-
       <BannerSlider />
+      <ViewersContainer />
     </>
   ) : (
     <SelectProfilesContainer user={user} setProfile={setProfile} />
