@@ -4,6 +4,7 @@ import { JumbotronContainer } from '../container/jumbotron';
 import { BGJumbotronContainer } from '../container/bgjumbotron';
 import { FooterContainer } from '../container/footer';
 import { HeaderContainer } from '../container/header';
+import { ShowcaseContainer } from '../container/showcase';
 
 export default function Home() {
   return (
@@ -13,11 +14,11 @@ export default function Home() {
           <Feature.Picture src='bundleLogo.svg' alt='Logo Bundle' />
           <Feature.ButtonLink> GET THE DISNEY BUNDLE</Feature.ButtonLink>
           <Feature.SmallText>
-            Stream Now. <a hreg='#'>Terms Apply</a>
+            Stream Now. <a href='/'>Terms Apply</a>
           </Feature.SmallText>
           <Feature.Picture src='franchiseLogo.png' alt='Franchise Bundle' />
           <Feature.Title>
-            <a href='#'>Sign up for Disney+ only.</a>
+            <a href='/'>Sign up for Disney+ only.</a>
           </Feature.Title>
           <Feature.SubTitle>Rs.399/month or Rs.3999/year</Feature.SubTitle>
           <Feature.Arrow></Feature.Arrow>
@@ -25,6 +26,7 @@ export default function Home() {
       </HeaderContainer>
       <JumbotronContainer />
       <BGJumbotronContainer />
+      <ShowcaseContainer />
       <FooterContainer />
     </>
   );

@@ -43,7 +43,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const SubTitle = styled.h2`
+export const SubTitle = styled.h4`
   font-size: 24px;
   font-weight: 600;
   line-height: 1.5;

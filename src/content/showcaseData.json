@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "infinityWar.jpeg",
+    "alt": "Avengers Infinity War"
+  },
+  {
+    "id": 2,
+    "image": "toystory.jpeg",
+    "alt": "Toy Story 4"
+  },
+  {
+    "id": 3,
+    "image": "Moana.png",
+    "alt": "Moana"
+  },
+  {
+    "id": 4,
+    "image": "starwars.jpeg",
+    "alt": "Star Wars- Rise of the Skywalker"
+  },
+  {
+    "id": 5,
+    "image": "hamilton.jpeg",
+    "alt": "Hamilton"
+  },
+  {
+    "id": 6,
+    "image": "simpsons.png",
+    "alt": "The Simpsons"
+  },
+  {
+    "id": 7,
+    "image": "mickeyMouse.jpeg",
+    "alt": "Mickey Mouse Club House"
+  },
+  {
+    "id": 8,
+    "image": "lifeBelowZero.jpeg",
+    "alt": "Life Below Zero"
+  },
+  {
+    "id": 9,
+    "image": "artemisFowl.jpeg",
+    "alt": "Artemis Fowl"
+  }
+]
