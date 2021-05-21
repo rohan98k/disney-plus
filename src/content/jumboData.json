@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Stream with Premier Access the same day it’s in theaters",
+    "subTitle": "Coming May 28. Get Premier Access to Cruella for $29.99 with a Disney+ subscription, and watch as many times as you like before it's available to all Disney+ subscribers at a later date. Learn more.",
+    "image": "./images/home/cruella.png",
+    "alt": "Cruella Show",
+    "direction": "row-reverse"
+  },
+  {
+    "id": 2,
+    "title": "Stream now or download and go",
+    "subTitle": "Stream on 4 devices at once or download your favorites to watch later. With dozens of titles in stunning 4K UHD, you can watch the way you always wished.",
+    "image": "/images/home/deviceMockup.png",
+    "alt": "Steam or Watch on the Go ",
+    "direction": "row"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "src": "images/home/groupwatch.jpeg",
+    "title": "Virtual movie nights with GroupWatch",
+    "subTitle": "Watch together, even when apart Stream with up to 6 friends Pause, rewind, react together Easy setup and sharing",
+    "direction": "row"
+  },
+  {
+    "id": 2,
+    "src": "images/home/blackPanther.jpg",
+    "title": "Endless entertainment",
+    "subTitle": "Disney classics, Pixar adventures, Marvel epics, Star Wars sagas, National Geographic explorations, and more.",
+    "direction": "row-reverse"
+  }
+]

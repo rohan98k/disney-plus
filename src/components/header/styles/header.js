@@ -4,32 +4,9 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
-  background: radial-gradient(rgba(12, 17, 27, 0.5) 0%, #0c111b 80%),
-    url(${({ src }) =>
-        src ? `../images/${src}.png` : '../images/home-bg.png'})
-      top left / cover repeat-x;
-  overflow-y: hidden;
-  -webkit-animation: backgroundScroll 30s linear infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation: backgroundScroll 30s linear infinite;
-  animation-fill-mode: forwards;
-  @-webkit-keyframes backgroundScroll {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 0px -180px;
-    }
-  }
-
-  @keyframes backgroundScroll {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 0px -180px;
-    }
-  }
+  background: url(${({ src }) =>
+      src ? `../images/home/${src}.jpg` : '../images/home/heroBG.jpg'})
+    top left / cover repeat-x;
 `;
 
 export const Container = styled.div`
@@ -119,7 +96,7 @@ export const SearchIcon = styled.button`
 `;
 
 export const Logo = styled.img`
-height : 80px;  
+height : 45px;  
 width: 120px;
   margin-right : 30px;
   @media (min-width: 1440px{
@@ -203,24 +180,31 @@ export const Profile = styled.div`
 
 export const SubscribeButtonLink = styled(ReactRouterLink)`
   display: block;
-  background-color: #1f80e0;
+  background-color: #0063e5;
   justify-content: center;
-  width: 90px;
-  height: fit-content;
   color: white;
   border-radius: 4px;
   font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 10px 20px;
   box-sizing: border-box;
   cursor: pointer;
   margin-right : 15px;
   }
   `;
 export const ButtonLink = styled(ReactRouterLink)`
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
+  display: block;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid white;
   color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
   margin-right: 0;
 `;

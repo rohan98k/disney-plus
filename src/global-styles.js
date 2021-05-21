@@ -9,9 +9,9 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
     height: 100%;
     margin:0;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: white;
-  background-color: #0c111b;
+  background-color: #040714;
 }`;
