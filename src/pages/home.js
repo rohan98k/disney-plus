@@ -5,6 +5,8 @@ import { BGJumbotronContainer } from '../container/bgjumbotron';
 import { FooterContainer } from '../container/footer';
 import { HeaderContainer } from '../container/header';
 import { ShowcaseContainer } from '../container/showcase';
+import { SpanContainer } from '../container/span';
+import { DevicesContainer } from '../container/devices';
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
       <JumbotronContainer />
       <BGJumbotronContainer />
       <ShowcaseContainer />
+      <SpanContainer />
+      <DevicesContainer />
       <FooterContainer />
     </>
   );

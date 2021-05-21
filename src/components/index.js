@@ -9,3 +9,5 @@ export { default as Viewers } from './viewers';
 export { default as Jumbotron } from './jumbotron';
 export { default as BGJumbotron } from './bgjumbotron';
 export { default as Showcase } from './showcase';
+export { default as Span } from './span';
+export { default as Devices } from './devices';

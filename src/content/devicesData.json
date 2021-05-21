@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "src": "./images/home/devices/tv.png",
+    "alt": "Television",
+    "heading": "Television",
+    "subtitle": [
+      "Amazon Fire TV \n",
+      "Android TV devices \n",
+      "AppleTV \n",
+      "Chromecast \n",
+      "LG TV \n",
+      "Roku \n",
+      "Samsung \n",
+      "Xfinity X1 & Flex \n"
+    ]
+  },
+  {
+    "id": 2,
+    "src": "./images/home/devices/computer.png",
+    "alt": "Computer",
+    "heading": "Computer",
+    "subtitle": ["Chrome OS \n", "MacOS \n", "Windows PC\n"]
+  },
+  {
+    "id": 3,
+    "src": "./images/home/devices/mobile.png",
+    "alt": "Mobile & Tablet",
+    "heading": "Mobile & Tablet",
+    "subtitle": [
+      "Amazon Fire Tablets\n",
+      "Android Phones & Tablets\n",
+      "iPhone and iPad\n"
+    ]
+  },
+  {
+    "id": 4,
+    "src": "./images/home/devices/console.png",
+    "alt": "Game Consoles",
+    "heading": "Game Consoles",
+    "subtitle": [
+      "PS4\n",
+      "PS5\n",
+      "Xbox One \n",
+      "Xbox Series X \n",
+      "Xbox Series S \n"
+    ]
+  }
+]
