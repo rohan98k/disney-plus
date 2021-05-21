@@ -70,9 +70,9 @@ export const Input = styled.input`
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 1px solid #1f80e0;
+  border-bottom: 1px solid #0063e5;
   :focus {
-    border-bottom: 2px solid #1f80e8;
+    border-bottom: 2px solid #0063e5;
   }
   :placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -80,7 +80,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  background: #1f80e0;
+  background: #0063e5;
   border-radius: 4px;
   font-size: 16px;
   font-weight: bold;

@@ -8,7 +8,7 @@ export function SpanContainer() {
       <Span.TextFrame>
         <Span.SubTitle>
           Get The Disney Bundle to stream the best movies, shows, and sports
-          with Disney+, Hulu, and ESPN+.<a>Terms Apply.</a>
+          with Disney+, Hulu, and ESPN+.<a href='/'>Terms Apply.</a>
         </Span.SubTitle>
         <Span.Button>GET THE DISNEY BUNDLE</Span.Button>
       </Span.TextFrame>

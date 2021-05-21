@@ -34,6 +34,7 @@ export default function SignUp() {
         setEmailAddress = '';
         setPassword = '';
         setError = error.message;
+        console.log(setError);
       });
   };
 
