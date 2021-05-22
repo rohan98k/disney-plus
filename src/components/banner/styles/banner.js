@@ -63,21 +63,39 @@ export const Container = styled.div`
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
     border: 4px solid rgba(249, 249, 249, 0.8);
   }
+  @media (max-width: 700px) {
+    height: 25vh;
+    position: relative;
+  }
 `;
 
 export const Frame = styled.div`
   padding: 40px 50px;
   max-width: 400px;
+  @media (max-width: 700px) {
+    padding: 20px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 `;
 
 export const Heading = styled.h1`
   font-size: 30px;
+  @media (max-width: 700px) {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
 `;
 
 export const Subtitle = styled.h4`
   font-size: 15px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.6);
+  @media (max-width: 700px) {
+    font-weight: 600;
+    margin: 0;
+  }
 `;
 
 export const Body = styled.p`
@@ -85,4 +103,7 @@ export const Body = styled.p`
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;

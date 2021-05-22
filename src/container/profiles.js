@@ -9,7 +9,7 @@ export function SelectProfilesContainer({ user, setProfile }) {
         <Header.Frame>
           <Header.Logo
             to={ROUTES.HOME}
-            src='./images/disneyLogo.svg'
+            src='./images/logo.svg'
             alt='Disney Plus'
           />
         </Header.Frame>

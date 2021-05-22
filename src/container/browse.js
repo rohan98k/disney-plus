@@ -26,7 +26,7 @@ export function BrowseContainer({ slides }) {
       <Header bg={false}>
         <Header.Frame>
           <Header.Group>
-            <Header.Logo to={ROUTES.HOME} src='./images/disneyLogo.svg' />
+            <Header.Logo to={ROUTES.HOME} src='./images/logo.svg' />
             <Header.TextLink>TV</Header.TextLink>
             <Header.TextLink>Movies</Header.TextLink>
             <Header.TextLink>Sports</Header.TextLink>

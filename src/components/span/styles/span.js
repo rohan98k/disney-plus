@@ -11,11 +11,19 @@ export const Container = styled.div`
   border: 1px solid white;
   @media (max-width: 600px) {
     flex-direction: column;
+    padding: 100px 0 50px;
+    border: none;
+    width: 100%;
   }
 `;
 
 export const TextFrame = styled.div`
   width: 50%;
+  @media (max-width: 600px) {
+    text-align: center;
+    padding: 10px 30px 0;
+    width: 100%;
+  }
 `;
 
 export const SubTitle = styled.h4`
@@ -37,6 +45,10 @@ export const Picture = styled.img`
   width: 50%;
   height: auto;
   padding: 0 30px;
+  @media (max-width: 600px) {
+    padding: 10px 30px 0;
+    width: 100%;
+  }
 `;
 
 export const Button = styled(ReactRouterLink)`
@@ -52,5 +64,9 @@ export const Button = styled(ReactRouterLink)`
   padding: 15px 15px;
   box-sizing: border-box;
   cursor: pointer;
+  @media (max-width: 700px) {
+    font-size: 15px;
+    width: 100%;
+  }
   }
   `;

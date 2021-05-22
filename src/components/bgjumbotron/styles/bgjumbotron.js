@@ -12,6 +12,7 @@ export const Inner = styled.div`
   width: 100%;
   @media (max-width: 600px) {
     flex-direction: column;
+    padding: 50px 0 0;
   }
 `;
 
@@ -24,8 +25,9 @@ export const Pane = styled.div`
   z-index: 2;
   @media (max-width: 600px) {
     width: 100%;
-    padding: 0 45px;
+    padding: 0 30px;
     text-align: center;
+    position: static;
   }
 `;
 
@@ -34,6 +36,11 @@ export const Frame = styled.div`
   img {
     position: relative;
     width: 100%;
+  }
+  @media (max-width: 700px) {
+    img {
+      position: static;
+    }
   }
 `;
 
@@ -61,11 +68,14 @@ export const Item = styled.div`
   color: white;
   overflow: hidden;
   margin-bottom: 50px;
+  @media (max-width: 600px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const Container = styled.div`
   @media (max-width: 600px) {
-    ${Item}:last-of-type h2 {
+    ${Item}:last-of-type h4 {
       margin-bottom: 50px;
     }
   }

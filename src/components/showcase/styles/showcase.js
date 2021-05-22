@@ -12,6 +12,8 @@ export const Container = styled.div`
   width: 100%;
   @media (max-width: 600px) {
     flex-direction: column;
+    text-align: center;
+    padding: 50px 30px 0;
   }
 `;
 
@@ -40,6 +42,7 @@ export const Grid = styled.div`
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-bottom: 50px;
   @media (max-width: 600px) {
+    display: flex;
     flex-direction: column;
   }
 `;
@@ -62,5 +65,8 @@ export const Button = styled(ReactRouterLink)`
   padding: 15px 15px;
   box-sizing: border-box;
   cursor: pointer;
+  @media (max-width: 700px) {
+    font-size: 15px;
+    width: 100%;
   }
-  `;
+`;

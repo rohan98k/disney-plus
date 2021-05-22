@@ -12,6 +12,10 @@ export const Container = styled.div`
   max-width: 700px;
   padding: 60px 137px 60px;
   margin-bottom: 100px;
+  @media (max-width: 1000px) {
+    padding: 0 30px;
+    text-align: center;
+  }
 `;
 
 export const Error = styled.div`
@@ -35,14 +39,23 @@ export const Base = styled.form`
 
 export const Title = styled.h3`
   color: rgba(255, 255, 255, 0.8);
-  font-size: 20px;
-  margin-bottom: 28px;
+  font-size: 30px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  @media (max-width: 1000px) {
+    font-size: 20px;
+  }
 `;
 
 export const Text = styled.p`
   color: #737373;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: hsla(0, 0%, 75.3%, 0.8);
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
 `;
 
 export const SmallText = styled.p`
@@ -56,6 +69,7 @@ export const Link = styled(ReactRouterLink)`
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    color: #0063e5;
   }
 `;
 
@@ -85,7 +99,7 @@ export const Button = styled.button`
   font-size: 16px;
   font-weight: bold;
   margin: 10px 0 10px;
-  padding: 16px;
+  padding: 15px 15px;
   border: 0;
   color: white;
   cursor: pointer;
@@ -95,5 +109,9 @@ export const Button = styled.button`
 
   &:last-of-type {
     background: #3f51b5;
+  }
+  @media (max-width: 700px) {
+    font-size: 15px;
+    width: 100%;
   }
 `;

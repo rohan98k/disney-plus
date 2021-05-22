@@ -18,6 +18,9 @@ export const Container = styled.div`
   a {
     display: flex;
   }
+  @media (max-width: 600px) {
+    margin: 0 30px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -96,13 +99,18 @@ export const SearchIcon = styled.button`
 `;
 
 export const Logo = styled.img`
-height : 45px;  
-width: 120px;
-  margin-right : 30px;
-  @media (min-width: 1440px{
+  height: 45px;
+  width: 120px;
+  margin-right: 30px;
+  @media {
     height: 60px;
     width: 120px;
-  })
+  }
+  @media (max-width: 600px) {
+    height: 40px;
+    width: 80px;
+    margin-right: 0;
+  }
 `;
 
 export const TextLink = styled.p`
@@ -179,7 +187,6 @@ export const Profile = styled.div`
 `;
 
 export const SubscribeButtonLink = styled(ReactRouterLink)`
-  display: block;
   background-color: #0063e5;
   justify-content: center;
   color: white;
@@ -190,9 +197,14 @@ export const SubscribeButtonLink = styled(ReactRouterLink)`
   padding: 10px 20px;
   box-sizing: border-box;
   cursor: pointer;
-  margin-right : 15px;
+  margin-right: 15px;
+  @media (max-width: 700px) {
+    font-size: 15px;
+    display: flex;
+    padding: 10px 10px;
   }
-  `;
+`;
+
 export const ButtonLink = styled(ReactRouterLink)`
   display: block;
   justify-content: center;
@@ -207,4 +219,9 @@ export const ButtonLink = styled(ReactRouterLink)`
   box-sizing: border-box;
   cursor: pointer;
   margin-right: 0;
+  @media (max-width: 700px) {
+    font-size: 15px;
+    display: flex;
+    padding: 10px 10px;
+  }
 `;

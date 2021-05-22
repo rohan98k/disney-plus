@@ -10,6 +10,10 @@ export const Container = styled.div`
   margin: auto;
   width: 60vw;
   max-width: 800px;
+  @media (max-width: 700px) {
+    width: 100%;
+    padding: 25vh 30px;
+  }
 `;
 
 export const Title = styled.p`
@@ -61,6 +65,10 @@ export const ButtonLink = styled(ReactRouterLink)`
   padding: 15px 20px;
   box-sizing: border-box;
   cursor: pointer;
+  @media (max-width: 700px) {
+    font-size: 15px;
+    width: 100%;
+  }
 `;
 
 export const Arrow = styled.div``;

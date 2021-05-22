@@ -6,6 +6,11 @@ export const Container = styled.div`
   padding: 0 calc(3.5vw + 5px);
   grid-gap: 25px;
   grid-template-columns: repeat(5, minmax(0, 1fr));
+  @media (max-width: 700px) {
+    padding: 0 30px;
+    grid-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const Frame = styled.div`

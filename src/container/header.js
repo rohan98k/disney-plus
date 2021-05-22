@@ -9,7 +9,7 @@ export function HeaderContainer({ children }) {
         <Header.Logo
           to={ROUTES.HOME}
           alt='Disney Plus'
-          src='./images/disneyMainLogo.svg'
+          src='./images/logo.svg'
         />
         <Header.Box>
           <Header.SubscribeButtonLink to={ROUTES.SIGN_UP}>
