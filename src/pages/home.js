@@ -8,13 +8,17 @@ import { ShowcaseContainer } from '../container/showcase';
 import { SpanContainer } from '../container/span';
 import { DevicesContainer } from '../container/devices';
 
+import * as ROUTES from '../constants/routes';
+
 export default function Home() {
   return (
     <>
       <HeaderContainer>
         <Feature>
           <Feature.Picture src='bundleLogo.svg' alt='Logo Bundle' />
-          <Feature.ButtonLink> GET THE DISNEY BUNDLE</Feature.ButtonLink>
+          <Feature.ButtonLink to={ROUTES.SIGN_UP}>
+            GET THE DISNEY BUNDLE
+          </Feature.ButtonLink>
           <Feature.SmallText>
             Stream Now. <a href='/'>Terms Apply</a>
           </Feature.SmallText>

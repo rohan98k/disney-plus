@@ -27,6 +27,10 @@ export const SubTitle = styled.h4`
   @media (max-width: 1000px) {
     font-size: 18px;
   }
+  a {
+    text-decoration: underline;
+    color: white;
+  }
 `;
 
 export const Picture = styled.img`

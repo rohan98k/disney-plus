@@ -8,8 +8,8 @@ export function DevicesContainer() {
       <Devices.Title>Available on your favorite devices</Devices.Title>
       <Devices.Frame>
         {devicesData.map((item) => (
-          <Devices.Row>
-            <Devices.Picture key={item.id} src={item.src} alt={item.alt} />
+          <Devices.Row key={item.id}>
+            <Devices.Picture src={item.src} alt={item.alt} />
             <Devices.Heading>{item.heading}</Devices.Heading>
             <Devices.SubTitle>{item.subtitle} </Devices.SubTitle>
           </Devices.Row>

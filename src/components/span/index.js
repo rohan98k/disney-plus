@@ -17,6 +17,10 @@ Span.Picture = function SpanPicture({ src, ...restProps }) {
   return <Picture {...restProps} src={src} />;
 };
 
-Span.Button = function SpanButton({ children, ...restProps }) {
-  return <Button {...restProps}>{children}</Button>;
+Span.Button = function SpanButton({ to, children, ...restProps }) {
+  return (
+    <Button to={to} {...restProps}>
+      {children}
+    </Button>
+  );
 };

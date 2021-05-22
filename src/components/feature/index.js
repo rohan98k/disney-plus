@@ -21,8 +21,16 @@ Feature.Picture = function FeaturePicture({ src, ...restProps }) {
   return <Picture {...restProps} src={`/images/home/${src}`} />;
 };
 
-Feature.ButtonLink = function FeatureButtonLink({ children, ...restProps }) {
-  return <ButtonLink {...restProps}>{children}</ButtonLink>;
+Feature.ButtonLink = function FeatureButtonLink({
+  to,
+  children,
+  ...restProps
+}) {
+  return (
+    <ButtonLink to={to} {...restProps}>
+      {children}
+    </ButtonLink>
+  );
 };
 
 Feature.SubTitle = function FeatureSubTitle({ children, ...restProps }) {

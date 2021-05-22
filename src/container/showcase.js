@@ -2,6 +2,8 @@ import React from 'react';
 import showcaseData from '../content/showcaseData';
 import { Showcase } from '../components';
 
+import * as ROUTES from '../constants/routes';
+
 export function ShowcaseContainer() {
   return (
     <Showcase>
@@ -15,7 +17,9 @@ export function ShowcaseContainer() {
           <Showcase.Card key={item.id} src={item.image} alt={item.alt} />
         ))}
       </Showcase.Grid>
-      <Showcase.Button>GET THE DISNEY BUNDLE</Showcase.Button>
+      <Showcase.Button to={ROUTES.SIGN_UP}>
+        GET THE DISNEY BUNDLE
+      </Showcase.Button>
     </Showcase>
   );
 }

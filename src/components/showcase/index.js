@@ -28,6 +28,10 @@ Showcase.Card = function ShowcaseCard({ src, ...restProps }) {
   return <Card {...restProps} src={`/images/home/titles/${src}`} />;
 };
 
-Showcase.Button = function ShowcaseButton({ children, ...restProps }) {
-  return <Button {...restProps}>{children}</Button>;
+Showcase.Button = function ShowcaseButton({ to, children, ...restProps }) {
+  return (
+    <Button to={to} {...restProps}>
+      {children}
+    </Button>
+  );
 };

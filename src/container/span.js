@@ -1,6 +1,8 @@
 import React from 'react';
 import { Span } from '../components';
 
+import * as ROUTES from '../constants/routes';
+
 export function SpanContainer() {
   return (
     <Span>
@@ -8,9 +10,9 @@ export function SpanContainer() {
       <Span.TextFrame>
         <Span.SubTitle>
           Get The Disney Bundle to stream the best movies, shows, and sports
-          with Disney+, Hulu, and ESPN+.<a href='/'>Terms Apply.</a>
+          with Disney+, Hulu, and ESPN+. <a href='/'>Terms Apply.</a>
         </Span.SubTitle>
-        <Span.Button>GET THE DISNEY BUNDLE</Span.Button>
+        <Span.Button to={ROUTES.SIGN_UP}>GET THE DISNEY BUNDLE</Span.Button>
       </Span.TextFrame>
     </Span>
   );
