@@ -28,10 +28,14 @@ export const Frame = styled.div`
     video {
       opacity: 1;
     }
+    img {
+      z-index: 10;
+    }
   }
 `;
 
 export const Image = styled.img`
+  position: relative;
   display: flex;
   width: 100%;
   height: 100%;

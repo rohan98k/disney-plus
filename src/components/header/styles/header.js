@@ -102,7 +102,7 @@ export const Logo = styled.img`
   height: 45px;
   width: 120px;
   margin-right: 30px;
-  @media {
+  @media (min-width: 1440px) {
     height: 60px;
     width: 120px;
   }
@@ -118,7 +118,9 @@ export const TextLink = styled.p`
   text-decoration: none;
   margin-right: 30px;
   margin-top: 30px;
-  color: rgba(255, 255, 255, 0.6);
+  transition: weight 0.5s;
+  color: ${({ active }) =>
+    active === 'true' ? 'white' : 'rgba(255, 255, 255, 0.6)'};
   font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
   &:hover {
     color: white;

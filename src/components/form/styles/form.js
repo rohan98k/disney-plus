@@ -12,7 +12,7 @@ export const Container = styled.div`
   max-width: 700px;
   padding: 60px 137px 60px;
   margin-bottom: 100px;
-  @media (max-width: 1000px) {
+  @media (max-width: 700px) {
     padding: 0 30px;
     text-align: center;
   }
